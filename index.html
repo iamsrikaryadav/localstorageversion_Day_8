@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="quiz.js"></script>
+    <title>Socrative</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <style>
+        .divider {
+        display: flex;
+        }
+        .text-info{
+            color: yellow;
+        }
+        .gradient {
+        text-align: center;
+        align-items: stretch;
+        margin: 1em 0;
+        height: 2em;
+        line-height: 2em;
+        color: white;
+        background: #6ff542
+        }
+        body{
+          background-image: url("https://cdn.pixabay.com/photo/2019/09/24/16/05/storm-4501645_1280.jpg");
+          background-repeat: no-repeat, repeat;
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+          padding-top: 50px;
+        }
+        
+       .jumbotron{
+          background-image: url("https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283_1280.jpg");
+          background-repeat: no-repeat, repeat;
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+          padding-top: 50px;
+          font-weight: bold;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          padding: 00px;
+          border-radius: 50px;
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  
+    </style>
+</head>
+
+<body>
+   <div class="container">
+   <div class="jumbotron">
+    <div id="login">
+        <h3 id ="name" class="text-center text-primary pt-5 text-info"></h3>
+        <h2 id ="setbt"></h2>
+        <div id="notshow" class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h2 class="divider gradient" contenteditable>STUDENT LOGIN</h2>
+                            
+                            <div class="form-group">
+                                <label for="Roll No" class="text-info">Enter Your Roll Number</label>
+                                <input type="text" name="rollnum" id="rollnum" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="mytext">
+                                <label for="course" class="text-info">Select Course</label><br>
+                                    <option >-- Select Course --</option>
+                                    <option>Operating System</option>
+                                </select>
+                            </div> 
+
+                            <div class="form-group">
+                                <button onclick="saveLogin()" id="log" type="button" class="btn btn-primary">Login</button>
+                            </div>             
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+    
+</body>
+
+</html>
